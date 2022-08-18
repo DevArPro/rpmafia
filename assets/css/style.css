@@ -4,6 +4,7 @@
     list-style: none;
     text-decoration: none;
     font-family: 'Teko', sans-serif;
+    scroll-behavior: smooth;
 }
 
 
@@ -15,7 +16,7 @@ h1 {
 }
 h2 {
     font-size: 1.8em;
-    font-weight: 600;
+    font-weight: 500;
     font-family: 'Anton', sans-serif;
 }
 h3 {
@@ -55,12 +56,42 @@ a:hover {
 a.red-link:hover {
   border-bottom: 2px solid rgb(180, 44, 44);
 }
+span.expansion {
+  font-family: 'Anton', sans-serif;
+  color: rgb(180, 44, 44);
+}
+section h2 {
+  margin-bottom: 40px;
+  padding: 0 50px;
+}
+section h3 {
+  margin: 30px 0px 20px;
+  padding: 0 50px;
+}
+section h4 {
+  margin: 30px 0px 15px;
+  padding: 0 50px;
+}
+section p {
+  margin-bottom: 10px;
+  padding: 0 50px;
+}
+section .img {
+  height: 300px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: 60px 0 70px;
+  border-top: 2px solid rgb(226, 226, 226);
+  border-bottom: 2px solid rgb(226, 226, 226);
+  transform: skewY(-5deg);
+}
 
 body {
     height: 100vh;
     width: 100vw;
     background-color: rgb(20, 20, 20);
-    background-image: url(../Mafia-4-heros.jpg);
+    background-image: url(../img/Mafia-4-heros.jpg);
     background-position: left;
     background-size: cover;
     background-repeat: no-repeat;
@@ -87,7 +118,7 @@ header {
   justify-content: space-between;
   padding: 15px 40px;
   transition: 0.6s;
-  z-index: 10;
+  z-index: 100;
   position: absolute;
   top: 0;
   left: 0;
@@ -167,7 +198,7 @@ header .header--right nav.responsive ul li {
     header .header--right nav {
       display: none;
     }
-  }
+}
 
 main {
     height: calc(100vh - 90px);
@@ -179,6 +210,8 @@ main {
     justify-content: center;
     flex-direction: column;
     z-index: 10;
+    position: relative;
+    border-bottom: 1px solid rgb(49, 49, 49);
 }
 main h1 {
     word-break: break-word;
@@ -188,6 +221,37 @@ main h3 {
     color: rgba(226, 226, 226, 0.856);
     font-weight: 400;
     padding-left: 4px;
+}
+main .scroll {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .scroll a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(240, 240, 240);
+}
+main .scroll a:hover {
+  border-bottom: 2px solid transparent;
+  color: rgb(180, 44, 44);
+  transform: translate(0, 10px);
+}
+main .scroll p {
+  font-size: 1.3em;
+  margin-right: 15px;
+}
+main .scroll a:hover p {
+  color: rgb(180, 44, 44);
+}
+main .scroll #scroll--arrow {
+  padding-top: 6px;
 }
 
 @media screen and (min-width: 443px) {
@@ -245,4 +309,23 @@ main h3 {
   main h3 {
       font-size: 2.2em;
   }
+}
+
+section#about {
+  width: 100vw;
+  padding: 50px 0;
+  background-color: rgb(20, 20, 20);
+}
+section#about .img::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  z-index: -1;
+  background: url(../img/mafia-2-96259.jpg) 0 0 repeat;
+  background-position: center;
+  transform: skewY(5deg) rotate(11deg);
+  overflow: hidden;
 }
