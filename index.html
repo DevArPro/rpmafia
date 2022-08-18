@@ -4,67 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RP Mafia</title>
+    <title>Expansion - Mafia Roleplay</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/33ad9a8292.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="background--filter"></div>
+
     <header>
         <div class="header--left">
-            <h2>MAFIA Roleplay</h2>
+            <div class="header--titles">
+                <h3>EXPANSION</h3>
+                <p>RP Mafia</p>
+            </div>
         </div>
+
         <div class="header--right">
-            <ul>
-                <li><a href="#about">Késako?</a></li>
-                <li><a href="" target="_blank" class="header-cta">S'inscrire</a></li>
-            </ul>
+            <div class="menu--icon" id="nav-toggle" role="navigation" onclick="menuMobile()"> <!--Menu Mobile-->
+                <i class="fas fa-bars" aria-label="Menu de navigation"></i> 
+            </div>
+            <nav id="nav-menu" class="nav"> <!--Navbar Menu-->
+                <ul> <!--Nav-->
+                    <li><a href="#home" class="nav-link" onclick="linkMenuMobile()">Accueil</a></li>
+                    <li><a href="#about" class="nav-link" onclick="linkMenuMobile()">A propos</a></li>
+                    <li><a href="#subscribe" class="nav-link" onclick="linkMenuMobile()">Nous contacter</a></li>
+                    <li><a href="#contact" class="nav-link red-link" onclick="linkMenuMobile()">Inscription</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
     <main>
-        <div class="background--filter"></div>
-        <h1>RP MAFIA</h1>
-        <div class="main--buttons">
-            <a href="" class="main-cta" id="amino--link" title="Non disponible pour le moment">Nous rejoindre sur <img src="//wa1.narvii.com/static/img/amino-logo-home.svg?v=2" alt="Amino"> <div class="link-closed"></div></a>
-            <a href="S'inscrire" class="main-cta">Préinscription à l'évenement</a>
-        </div>
+        <h1>EXPANSION</h1>
+        <h3>MAFIA ROLEPLAY</h3>
     </main>
 
-    <section id="about">
-        <h3>Bienvenue sur l'évènement RP Mafia</h3>
-        <p>RP Mafia est un jeu de role play participatif. Actuellement en plein développement, l'évènement ouvrira ses portes d'ici peu. <a href="" class="red">Inscrivez vous pour rester informés</a></p>
-        <h3>Le rp, c'est quoi ?</h3>
-        <p>Le rp est un role play. Vous incarnez un personnage qui rejoint une mafia. Pour équilibrer le jeu, chaque personnage aura des malus et des bonus. Libre à vous d'interagir avec les autres personnages et de prendre des décisions pour la survie de votre gang ! Au programme, conquêtes, bagarres, rencontres, de quoi bien vous occuper...</p>
-    </section>
-
-    <footer>
-        <div class="footer">
-            <ul class="footer-ul">
-                <li class="para">
-                    <p>Evenement RP Mafia. Au programme, conquêtes, bagarres, rencontres...</p>
-                </li>
-                <li>
-                    <ul>
-                        <li><h4>Nous rejoindre</h4></li>
-                        <li><a href="">Préinscription à l'évenement</a></li>
-                        <li title="Non disponible pour le moment">Nous rejoindre sur Amino</li>
-                        <li title="Non disponible pour le moment">Nos réseaux sociaux</li>
-                    </ul>
-                </li>
-                <li>
-                    <ul>
-                        <li><h4>Plan du site</h4></li>
-                        <li><a href="#">Accueil</a></li>
-                        <li title="Non disponible pour le moment">CGV</li>
-                        <li title="Non disponible pour le moment">Politique de confidentialité</li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </footer>
-
-    <div class="footer--bandeau">Projet en cours de réalisation par Kun (ylinguss)  |  Site officiel RP Mafia  |  Copyright 2022</div>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
