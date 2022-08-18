@@ -324,7 +324,7 @@ section#about .img::before {
   top: -50%;
   left: -50%;
   z-index: -1;
-  background: url(../img/mafia-2-96259.jpg) 0 0 repeat;
+  background: url(../mafia-2-96259.jpg) 0 0 repeat;
   background-position: center;
   transform: skewY(5deg) rotate(11deg);
   overflow: hidden;
