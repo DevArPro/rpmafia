@@ -56,6 +56,13 @@ a:hover {
 a.red-link:hover {
   border-bottom: 2px solid rgb(180, 44, 44);
 }
+a.CTA {
+  margin-left: 50px;
+  padding: 10px 20px;
+  border: 1px solid rgb(180, 44, 44);
+  background-color: rgb(180, 44, 44);
+  color: white;
+}
 span.expansion {
   font-family: 'Anton', sans-serif;
   color: rgb(180, 44, 44);
@@ -75,6 +82,12 @@ section h4 {
 section p {
   margin-bottom: 10px;
   padding: 0 50px;
+}
+p.endpara {
+  margin-bottom: 30px;
+}
+section a {
+  margin-bottom: 10px;
 }
 section .img {
   height: 300px;
@@ -555,4 +568,58 @@ section#about .img .container--img a:hover span.expansion {
   section#about .img .container--img a {
     display: none;
   }
+}
+section#subscribe {
+  width: 100vw;
+  background-color: rgb(20, 20, 20);
+  background-image: url(../photo-1560684033-2a9ff3d2a03e.jfif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top: 2px solid rgb(97, 97, 97);
+}
+.container--subscribe {
+  background-color: rgba(12, 12, 12, 0.678);
+  padding: 70px 0 90px 0;
+}
+section#contact {
+  border-top: 2px solid rgb(97, 97, 97);
+  width: 100vw;
+}
+.container--contact {
+  padding: 70px 0;
+}
+
+footer {
+  width: 100vw;
+  background-color: rgb(3, 3, 3);
+  border-top: 2px solid rgb(97, 97, 97);
+}
+.container--footer {
+  padding: 40px;
+}
+.container--footer ul li:first-child ul {
+  margin-bottom: 40px;
+}
+.container--footer h4 {
+  font-size: 1em;
+  margin-bottom: 10px;
+  color: rgb(223, 223, 223);
+}
+.container--footer li a {
+  font-size: 0.9em;
+}
+.container--footer li p {
+  font-size: 0.9em;
+  color: rgb(223, 223, 223);
+}
+.container--licences {
+  font-size: 0.8em;
+  padding: 10px 20px;
+  background-color: rgb(3, 3, 3);
+  border-top: 1px solid rgb(97, 97, 97);
+  line-height: 1.7em;
+}
+.container--licences p {
+  color: rgb(212, 212, 212);
 }
